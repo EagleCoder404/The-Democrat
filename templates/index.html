@@ -1,0 +1,24 @@
+{% extends "base.html"%}
+
+{%block head%}
+<link rel="stylesheet" href="{{url_for('static',filename='index.css')}}">
+{%endblock%}
+
+{%block body%}
+    {% for post in posts_data %}
+    <div class='container shadow-lg post mb-5 p-3'>
+        <div class='container post-header'>
+            <h3 class='post-title'>
+                {{ post.post_title }}
+            </h3>
+            <p class='post-date text-muted m-0'>
+                {{post.post_date}}
+            </p>
+        </div>
+        <div class='post-content container'>
+         <p>  {{ post.post_content }} </p>
+        </div>
+    </div>
+    
+    {% endfor%}
+{%endblock%}
