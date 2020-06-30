@@ -4,7 +4,7 @@
 }
 body
 {
-	background:url("background.jpg");
+	background:url("background.jpg") no-repeat fixed center;
 }
 .logo_text
 {
