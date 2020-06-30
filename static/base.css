@@ -2,7 +2,10 @@
 {
     font-family: "dancing script";
 }
-
+body
+{
+	background:url("background.jpg");
+}
 .logo_text
 {
     font-family:Georgia;
